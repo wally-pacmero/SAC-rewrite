@@ -16,3 +16,5 @@
 
 ## Current Snapshot: 4.1.0
 ### This is currently not usable for production, but any testing and help is appreciated<br>If you need a production version, take a look at [SAC](https://github.com/DarkWav/SAC).
+## Starting modifications for newer versions
+@Serg1hhh & @Wallypacmero
