@@ -1,6 +1,8 @@
 # SAC-rewrite [![](https://img.shields.io/github/license/DarkWav/SAC-rewrite.svg?label=License)](https://github.com/DarkWav/SAC-rewrite/blob/master/LICENSE)
 ## The rewritten version of ShadowAntiCheat for Minecraft:Bedrock Edition
 
+## Status: Resuming project
+
 ## Curently planned Checks:
 - Angle <b>(complete)</b>
 - CombatHeuristics <b>(in progress, 70% complete)</b>
@@ -13,6 +15,7 @@
 - Speed <b>(complete)</b>
 - Spider (not started)
 - VClip (not started)
+- Autoclick <b>(in progress, 5% complete)</b>
 
-## Current Snapshot: 4.1.0
-### This is currently not usable for production, but any testing and help is appreciated<br>If you need a production version, take a look at [SAC](https://github.com/DarkWav/SAC).
+## Current Snapshot: 4.1.1
+### This is currently not usable for production, but any testing and help is appreciated<br>If you need a production version, take a look at [SAC](https://github.com/DarkWav/SAC).(PM3)
