@@ -19,9 +19,7 @@ use pocketmine\Server;
 use pocketmine\utils\MainLogger;
 use pocketmine\utils\TextFormat;
 use pocketmine\math\Vector3;
-use pocketmine\world\World;
-use pocketmine\block\BlockLegacyIds as BlockIds;
-use pocketmine\block\Block;
+use pocketmine\block\VanillaBlocks;
 
 class Analyzer
 {
@@ -652,8 +650,8 @@ class Analyzer
       for ($zidx = $posZ-1; $zidx <= $posZ+1; $zidx = $zidx + 1)
       {
         $pos   = new Vector3($xidx, $posY, $zidx);
-        $block = $level->getBlock($pos)->getId();
-        if ($block != BlockIds::AIR)
+        $block = $level->getBlock($pos)->getTypeId();
+        if ($block != VanillaBlocks::AIR)
         {
           $this->Logger->debug(TextFormat::ESCAPE.$this->Colorized."[SAC] [Player: ".$this->PlayerName."] [Debug: Movement] > areAllBlocksAboveAir: false");
           return false;
@@ -676,7 +674,7 @@ class Analyzer
       for ($zidx = $posZ-1; $zidx <= $posZ+1; $zidx = $zidx + 1)
       {
         $pos        = new Vector3($xidx, $posY, $zidx);
-        if($level->getBlock($pos)->getId() != BlockIds::AIR) # only use friction factor if block below isn't air
+        if($level->getBlock($pos)->getTypeId() != VanillaBlocks::AIR) # only use friction factor if block below isn't air
         {
           if($frictionFactor <= $level->getBlock($pos)->getFrictionFactor()) # use new friction factor only if it has a higher value
           {
