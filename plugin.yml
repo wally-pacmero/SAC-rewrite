@@ -2,7 +2,7 @@ name: ShadowAntiCheat
 main: DarkWav\SAC\Main
 version: 4.1.0
 authors: ["DarkWav", "radondev"]
-api: [4.0.0]
+api: [5.0.0]
 commands:
   shadowanticheat:
     description: Shows ShadowAntiCheat version.
